@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>The real first homework</title>
+</head>
+<body>
+  <p style="font-size:200%;" id="kmu-id">KMU ID : 20123196</p>
+  <p style="font-size:200%;">Name : 노현경</p>
+  <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T23:59">April 7th.</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
+
+  <h1>Understanding HTML Concepts</h1>
+  <ol>
+    <li>What does HTML stand for? (1 point) 
+      <ul>
+        <li>H : Hyper</li>
+        <li>T : Text</li>
+        <li>M : Markup</li>
+        <li>L : Language</li>
+      </ul>
+    </li><br>
+    <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
+    <div>
+      Answer : Programming languages have functional purposes. HTML, as a markup language doesn’t really “do” anything in the sense that a programming language does. HTML contains no programming logic. It doesn’t have common conditional statements such as If/Else. It can’t evaluate expressions or do any math. It doesn’t handle events or carry out tasks. You can’t declare variables and you can’t write functions. It doesn’t modify or manipulate data in any way. HTML can’t take input and produce output. Think of it this way: you can’t compute the sum of 2 + 2 in HTML; that’s not what it’s for. This is because HTML is not a programming language. 
+    </div><br>
+    <li>Describe what do the following tags mean(4 point)</li>
+    <ul>
+        <li>pre : The pre tag defines preformatted text. Text in a pre element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks. </li>
+        <li>p : The p tag defines a paragraph. Browsers automatically add some space (margin) before and after each p element. The margins can be modified with CSS (with the margin properties). </li>
+        <li>br : The br tag inserts a single line break. The br tag is an empty tag which means that it has no end tag. </li>
+        <li>h1, h2, h3, h4, h5, h6 : The h1 to h6 tags are used to define HTML headings. h1 defines the most important heading. h6 defines the least important heading. </li>
+      </ul>
+    </li><br>
+    <li>Describe difference between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point).<br>Answer : strong means "stronger emphasis", and implies no particular visual style. It has semantic meaning, but by default a browser could style it to look like anything, not just bold. On the other hand, b literally means 'make this text bold', without any attached meaning. It is a presentational tag and so should probably be avoided (where possible) in favour of CSS.</li><br>
+    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point).<br>Answer : Alt text is meant to be an alternative information source for those people who have chosen to disable images in their browsers and those user agents that are simply unable to “see” the images. It should describe what the image is about and get those visitors interested to see it. Without alt text, an image will be displayed as an empty icon: without alt In Internet Explorer Alt text also pops up when you hover over an image. Plus, Google officially confirmed it mainly focuses on alt text when trying to understand what an image is about. Image title (and the element name speaks for itself) should provide additional information and follow the rules of the regular title: it should be relevant, short, catchy, and concise (a title “offers advisory information about the element for which it is set“). In FireFox and Opera it pops up when you hover over an image: </li><br>
+    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point).<br> Answer : The td tag creates table cells within a table row in an HTML table. This is the HTML tag that contains text and images - the content of the HTML table. The th tag does nearly the same thing - but it defines the current cell as a table header. Most Web browsers change the font weight to bold and center the content in a th cell.</li>
+  </ol>
+
+  <h1>Using HTML Tags</h1>
+  <ol>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points)<br> Answer : <a href="http://cs.kookmin.ac.kr">KMU-CS</a></li> 
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points)<br> Answer : <a href="http://cs.kookmin.ac.kr" target="_blank">KMU-CS</a> </li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point)<br> Answer : <br><a href="http://cs.kookmin.ac.kr" target="_blank"><img src="files/smiley.gif" alt="No" style="width:128px;height:128px;"></a></li>
+    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point)<br> Answer : <a href="#kmu-id">kmu-id</a></li>
+    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points)<br> Answer: HTML homework is <strong>fun</strong></li>
+    <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
+    <div>
+      Answer: <br>
+<video width="400" controls autoplay loop>
+  <source src="files/movie.mp4" type="video/mp4">
+ <source src="files/movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+
+</video>
+
+    </div>
+    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)<br>Answer : <a href="files/table-quiz.pdf">table-quiz</a><br><embed src="files/table-quiz.pdf" width="500" height="300"></li>
+    <li>Change the following ordered list to unordered list (2 point)
+      <ol>
+        <li>apple</li>
+        <li>banana</li>
+      </ol>
+    </li> Answer : <br> 
+        <ul>
+        <li>apple</li>
+        <li>banana</li>
+      </ul>
+      
+    <li>Change the following ordered list numbering to capital roman character (5 point) 
+      <ol>
+        <li>apple</li>
+        <li>banana</li>
+      </ol>
+    </li>
+Answer : <br>
+   <ol type="I">
+        <li>apple</li>
+        <li>banana</li>
+      </ol
+    <li>Create an input field that gets 13 digit telephone number (5 point)<br> Answer : 
+<form>
+  13 digit telephone number :
+ <input type="tel" name="telephone number"><br>
+</form></li>
+    <li>Create an input field with a radio button to select male and female exclusively (5 points)<br> Answer : 
+<form action="action_page.php">
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+</form> </li>
+    <li>Create a submit and cancel button inside a form element (2 points)<br> Answer : <br>
+<button type="button" onclick="alert('Well done')">Submit</button><br><button type="button" onclick="alert('Cancelled')">Cancel</button></li>
+    <li>Create a datetime input format to get date as an input (3 points)<br> Answer : 
+<form>
+  Date and time :
+  <input type="datetime" name="date and time">
+</form></li>
+    <li>Create a following table (5 points) </li>
+    <img src="files/table-1.png" width=400px> <br>Answer : <br>
+<head>
+
+
+<style>
+    .uptable {
+    border: 1px solid black;
+      padding: 3px;
+   text-align : left;     
+   }
+
+    .downtable {
+    border: 1px solid black;
+      padding: 3px;
+   text-align : center;    
+    border-collapse: collapse; 
+   }
+
+ 
+</style>
+</head>
+<body>
+
+<table class="uptable" style="width:60%" >
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>      
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>      
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>      
+    <td>94</td>
+  </tr>
+ 
+</table>
+
+</body>
+
+    <li>Create a following table - border type does not matter (10 points) </li>
+    <img src="files/table-2.gif">
+ <br> Answer : <br>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 3px;    
+}
+</style>
+</head>
+<body>
+<table class="downtable" style="width:60%"  >
+  <tr>
+ <th colspan="7">Time table</th>
+  </tr>  
+<tr>
+    <th rowspan="6" colspan = "2">Hours</th>
+    <th colspan="1">Mon</th>
+<th colspan="1">Tue</th>
+<th colspan="1">Wed</th>
+<th colspan="1">Thu</th>
+<th colspan="1">Fri</th>
+  </tr>
+  <tr>
+    <td>Science</td>
+    <td>Maths</td>
+    <td>Science</td>
+    <td>Maths</td>
+    <td>Arts</td>
+
+  </tr>
+  <tr>
+    <td>Social</td>
+    <td>History</td>
+    <td>English</td>
+    <td>Social</td>
+    <td>Sports</td>
+  </tr>
+  <tr>
+ <th colspan="6">Lunch</th>
+  </tr>  
+ <tr>
+    <td>Science</td>
+    <td>Maths</td>
+    <td>Science</td>
+    <td>Maths</td>
+    <th rowspan="2" colspan = "1">Project</th>
+
+  </tr>
+  <tr>
+    <td>Social</td>
+    <td>History</td>
+    <td>English</td>
+    <td>Social</td>
+  </tr>
+</table>
+
+</body>
+
+
+  </body>
+</html>
